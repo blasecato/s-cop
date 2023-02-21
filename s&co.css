@@ -1,0 +1,182 @@
+body,
+html,
+h1,
+p,
+span,
+h2,
+h3,
+a,
+h4,
+h5 {
+	padding: 0;
+	margin: 0;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 30px;
+}
+.video {
+	padding: 0 30px;
+}
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.box-head {
+	min-width: 500px;
+}
+.tapa {
+	width: 85px;
+	height: auto;
+}
+.title, .title2 > h1 {
+	font-family: PPNeueMontreal-Book;
+	font-size: 38px;
+	font-weight: 400;
+	color: #000000;
+}
+.title2 > h1 {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 35px;
+}
+.title2 {
+	padding: 0 30px;
+	display: flex;
+	justify-content: center;
+}
+.paragraph {
+	font-family: PPNeueMontreal-Book;
+	font-size: 30px;
+	font-weight: 400;
+	color: #000000;
+	max-width: 800px;
+}
+.content {
+	padding: 30px;
+	max-width: 1800px;
+}
+iframe {
+	width: 100%;
+	height: 686px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 30px 0px;
+}
+.link {
+	font-family: PPNeueMontreal-Light;
+	font-size: 20px;
+	font-weight: 400;
+	color: #000000;
+	text-decoration: underline;
+	margin-top: 5px;
+}
+.link-net {
+	font-size: 25px;
+}
+.footer-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.sub-title, .sub-medium {
+	margin-top: 30px;
+	font-family: PPNeueMontreal-Medium;
+	font-size: 20px;
+	font-weight: 400;
+	color: #000000;
+}
+.sub-title:first-child, .sub-medium:first-child {
+	margin-top: 0px;
+}
+.a {
+	margin-top: 5px;
+	font-family: PPNeueMontreal-Book;
+	font-size: 20px;
+	font-weight: 400;
+	color: #000000;
+	text-decoration: none;
+}
+@font-face {
+	font-family: PPNeueMontreal-bold;
+	src: url("https://res.cloudinary.com/arepa-tec/raw/upload/v1676404134/sYcop/PPNeueMontreal-Bold_s7cd9q.otf") format("truetype");
+}
+@font-face {
+	font-family: PPNeueMontreal-Book;
+	src: url("https://res.cloudinary.com/arepa-tec/raw/upload/v1676404134/sYcop/PPNeueMontreal-Book_jcry56.otf") format("truetype");
+}
+@font-face {
+	font-family: PPNeueMontreal-Light;
+	src: url("https://res.cloudinary.com/arepa-tec/raw/upload/v1676404135/sYcop/PPNeueMontreal-Light_q4cdlv.otf") format("truetype");
+}
+@font-face {
+	font-family: PPNeueMontreal-Medium;
+	src: url("https://res.cloudinary.com/arepa-tec/raw/upload/v1676404135/sYcop/PPNeueMontreal-Medium_arkp5q.otf") format("truetype");
+}
+.video-desktop {
+	display: block;
+}
+.title2 {
+	display: none;
+}
+.video-mobile {
+	display: none;
+}
+.footer-box-net2 {
+	display: none;
+}
+@media (max-width: 768px) {
+	.video-desktop {
+		display: none;
+	}
+	.title {
+		display: none;
+	}
+	.title2 {
+		display: block;
+	}
+	.footer {
+		flex-direction: column;
+	}
+	.header {
+		align-items: center;
+		padding-bottom: 10px;
+	}
+	.tapa {
+		width: 55px;
+	}
+	.paragraph {
+		font-size: 23px;
+	}
+	.video-mobile {
+		display: block;
+		margin-top: 10px;
+	}
+	iframe {
+		height: 666px;
+	}
+	.footer-box-net {
+		display: none;
+	}
+	.video {
+    padding: 0;
+	}
+	#player {
+		margin: 0;
+		width: 100%;
+	}
+	.footer-box-net2 {
+		display: flex;
+	}
+	.footer-box {
+		margin-bottom: 20px;
+	}
+}
